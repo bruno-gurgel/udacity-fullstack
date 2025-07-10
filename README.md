@@ -1,6 +1,6 @@
 # Depoyment URL
 
-http://udacity-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80%26w=987%26auto=format%26fit=crop%26ixlib=rb-4.1.0%26ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#fromView\=keyword\&page\=1\&position\=0\&uuid\=d5787718-a8ca-46ee-9076-50ce869dc1df\&query\=Face
+http://udacity-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
 
 # Full Stack Apps on AWS Project
 
