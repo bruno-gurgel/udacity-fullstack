@@ -13,6 +13,7 @@ import Jimp from "jimp";
   return new Promise(async (resolve, reject) => {
     try {
       const photo = await Jimp.read(inputURL);
+      console.log(photo)
       const outpath =
         "/tmp/filtered." + Math.floor(Math.random() * 2000) + ".jpg";
       await photo
@@ -20,9 +21,11 @@ import Jimp from "jimp";
         .quality(60) // set JPEG quality
         .greyscale() // set greyscale
         .write(outpath, (img) => {
+          console.log({img})
           resolve(outpath);
         });
     } catch (error) {
+      console.log(error)
       reject(error);
     }
   });
@@ -36,5 +39,15 @@ import Jimp from "jimp";
  export async function deleteLocalFiles(files) {
   for (let file of files) {
     fs.unlinkSync(file);
+  }
+}
+
+
+export function isValidUrl(url) {
+  try {
+    new URL(url);
+    return true;
+  } catch {
+    return false;
   }
 }
